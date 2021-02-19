@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script>
+      function holdArrays() {
+        this.test500 = new Array(500);
+        this.test100000 = new Array(100000);
+        this.test26Filled = "abcdefghijklmnopqrstuvwxyz".split("");
+        this.testAdd = [];
+        this.testAdd[500000000] = `abcdefghijklmnopqrstuvwxyz`;
+      }
+
+      holdTest = new holdArrays();
+
+      const movies = [];
+      movies[9001] = "Dragon Ball Z";
+      alert(movies.length);
+      //movies.length = 1; not over 9000;
+    </script>
+  </head>
+  <body></body>
+</html>
